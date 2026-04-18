@@ -1,0 +1,78 @@
+◇ injected env (14) from .env // tip: ⌘ suppress logs { quiet: true }
+◇ injected env (0) from .env // tip: ⌘ enable debugging { debug: true }
+🧪 Starting LangGraph Workflow Test...
+----------------------------------------
+❌ Workflow Test Failed: AggregateError: Multiple errors occurred during superstep 1. See the "errors" field of this exception for more details.
+    at PregelRunner.tick (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/langgraph/src/pregel/runner.ts:176:13)
+    at CompiledStateGraph._runLoop (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/langgraph/src/pregel/index.ts:2314:9)
+    at createAndRunLoop (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/langgraph/src/pregel/index.ts:2162:9) {
+  [errors]: [
+    OpenAIError: Missing credentials. Please pass an `apiKey`, `workloadIdentity`, or set the `OPENAI_API_KEY` environment variable.
+        at OpenAI (/home/chetan/chetan/liveProjects/ai/node_modules/openai/src/client.ts:415:13)
+        at ChatOpenAICompletions._getClientOptions (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/base.ts:629:21)
+        at ChatOpenAICompletions.completionWithRetry (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:459:32)
+        at ChatOpenAICompletions._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:204:31)
+        at ChatOpenAI._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/index.ts:676:29)
+        at <anonymous> (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:568:46)
+        at Array.map (<anonymous>)
+        at ChatOpenAI._generateUncached (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:567:22)
+        at ChatOpenAI.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:282:20)
+        at RunnableSequence.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/runnables/base.ts:1912:25) {
+      pregelTaskId: 'e154f73e-5b70-5659-ae2b-694eb625557b'
+    },
+    OpenAIError: Missing credentials. Please pass an `apiKey`, `workloadIdentity`, or set the `OPENAI_API_KEY` environment variable.
+        at OpenAI (/home/chetan/chetan/liveProjects/ai/node_modules/openai/src/client.ts:415:13)
+        at ChatOpenAICompletions._getClientOptions (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/base.ts:629:21)
+        at ChatOpenAICompletions.completionWithRetry (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:459:32)
+        at ChatOpenAICompletions._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:204:31)
+        at ChatOpenAI._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/index.ts:676:29)
+        at <anonymous> (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:568:46)
+        at Array.map (<anonymous>)
+        at ChatOpenAI._generateUncached (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:567:22)
+        at ChatOpenAI.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:282:20)
+        at RunnableSequence.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/runnables/base.ts:1912:25) {
+      pregelTaskId: '0204558d-3d56-5829-8c48-b8d62a10dbec'
+    },
+    OpenAIError: Missing credentials. Please pass an `apiKey`, `workloadIdentity`, or set the `OPENAI_API_KEY` environment variable.
+        at OpenAI (/home/chetan/chetan/liveProjects/ai/node_modules/openai/src/client.ts:415:13)
+        at ChatOpenAICompletions._getClientOptions (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/base.ts:629:21)
+        at ChatOpenAICompletions.completionWithRetry (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:459:32)
+        at ChatOpenAICompletions._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:204:31)
+        at ChatOpenAI._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/index.ts:676:29)
+        at <anonymous> (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:568:46)
+        at Array.map (<anonymous>)
+        at ChatOpenAI._generateUncached (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:567:22)
+        at ChatOpenAI.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:282:20)
+        at RunnableSequence.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/runnables/base.ts:1912:25) {
+      pregelTaskId: '225659d6-016a-5da5-b073-aa6d53250505'
+    },
+    OpenAIError: Missing credentials. Please pass an `apiKey`, `workloadIdentity`, or set the `OPENAI_API_KEY` environment variable.
+        at OpenAI (/home/chetan/chetan/liveProjects/ai/node_modules/openai/src/client.ts:415:13)
+        at ChatOpenAICompletions._getClientOptions (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/base.ts:629:21)
+        at ChatOpenAICompletions.completionWithRetry (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:459:32)
+        at ChatOpenAICompletions._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:204:31)
+        at ChatOpenAI._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/index.ts:676:29)
+        at <anonymous> (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:568:46)
+        at Array.map (<anonymous>)
+        at ChatOpenAI._generateUncached (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:567:22)
+        at ChatOpenAI.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:282:20)
+        at RunnableSequence.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/runnables/base.ts:1912:25) {
+      pregelTaskId: '061c5e6e-6be4-5aa1-80d8-2bcccf74dc50'
+    },
+    OpenAIError: Missing credentials. Please pass an `apiKey`, `workloadIdentity`, or set the `OPENAI_API_KEY` environment variable.
+        at OpenAI (/home/chetan/chetan/liveProjects/ai/node_modules/openai/src/client.ts:415:13)
+        at ChatOpenAICompletions._getClientOptions (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/base.ts:629:21)
+        at ChatOpenAICompletions.completionWithRetry (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:459:32)
+        at ChatOpenAICompletions._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/completions.ts:204:31)
+        at ChatOpenAI._generate (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/openai/src/chat_models/index.ts:676:29)
+        at <anonymous> (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:568:46)
+        at Array.map (<anonymous>)
+        at ChatOpenAI._generateUncached (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:567:22)
+        at ChatOpenAI.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/language_models/chat_models.ts:282:20)
+        at RunnableSequence.invoke (/home/chetan/chetan/liveProjects/ai/node_modules/@langchain/core/src/runnables/base.ts:1912:25) {
+      pregelTaskId: 'b5120f21-aa79-5512-bf6c-9d2287eb1672'
+    }
+  ]
+}
+(node:9014) MaxListenersExceededWarning: Possible EventTarget memory leak detected. 11 abort listeners added to [AbortSignal]. MaxListeners is 10. Use events.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)

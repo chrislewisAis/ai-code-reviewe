@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongodb:27017/ai-code-reviewer
+      - REDIS_HOST=redis
+    depends_on:
+      - mongodb
+      - redis
+    networks:
+      - ai-network
+
+  worker:
+    build: .
+    command: npm run start:worker
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongodb:27017/ai-code-reviewer
+      - REDIS_HOST=redis
+    depends_on:
+      - mongodb
+      - redis
+    networks:
+      - ai-network
+
+  mongodb:
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - ai-network
+
+  redis:
+    image: redis:7.0-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - ai-network
+
+networks:
+  ai-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
