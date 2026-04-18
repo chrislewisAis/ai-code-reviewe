@@ -26,4 +26,4 @@ async function startWorker() {
 
 startWorker();
 
-intentionalBug();
+intentionalBug1();
