@@ -24,7 +24,7 @@ app.use(express.json({ limit: '1mb' }));
 app.use('/', healthRoutes);
 
 // Webhook Route
-app.post('/webhooks/github', (req: Request, res: Response, next: NextFunction) => {
+app.post(['/webhooks/github', '/webhook/github'], (req: Request, res: Response, next: NextFunction) => {
   githubWebhookHandler.handle(req, res).catch(next);
 });
 
