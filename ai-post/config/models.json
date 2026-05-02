@@ -1,0 +1,23 @@
+{
+  "research_model_chain": [
+    "google:gemini-1.5-flash-latest",
+    "openrouter:google/gemini-flash-1.5",
+    "groq:llama-3.1-8b-instant"
+  ],
+  "writing_model_chain": [
+    "google:gemini-1.5-pro-latest",
+    "openrouter:google/gemini-pro-1.5",
+    "groq:llama-3.1-70b-versatile"
+  ],
+  "analysis_model_chain": [
+    "groq:llama-3.1-8b-instant",
+    "google:gemini-1.5-flash-latest"
+  ],
+  "seo_model_chain": [
+    "google:gemini-1.5-flash-latest",
+    "openrouter:google/gemini-flash-1.5"
+  ]
+}
+
+
+
